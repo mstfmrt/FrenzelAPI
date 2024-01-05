@@ -11,6 +11,7 @@ namespace FrenzelAPI.Models
         public DateTime DiagnosisDate { get; set; }
         public NystagmusType? NystagmusType { get; set; }
         public string NystagmusSeverity { get; set; }
+        public string RecordPath { get; set; }
     }
 
     public enum NystagmusType

@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FrenzelAPI.Data.Migrations
 {
     [DbContext(typeof(DiagnosisDbContext))]
-    [Migration("20231202143320_createdatabase")]
+    [Migration("20231221215019_createdatabase")]
     partial class createdatabase
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -44,6 +44,10 @@ namespace FrenzelAPI.Data.Migrations
 
                     b.Property<int>("PatientId")
                         .HasColumnType("int");
+
+                    b.Property<string>("RecordPath")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 

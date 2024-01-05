@@ -18,7 +18,8 @@ namespace FrenzelAPI.Data.Migrations
                     PatientId = table.Column<int>(type: "int", nullable: false),
                     DiagnosisDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     NystagmusType = table.Column<int>(type: "int", nullable: true),
-                    NystagmusSeverity = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    NystagmusSeverity = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    RecordPath = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
