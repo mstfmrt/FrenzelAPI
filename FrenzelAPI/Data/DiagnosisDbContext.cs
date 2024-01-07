@@ -11,6 +11,6 @@ namespace FrenzelAPI.Data
 
         }
 
-        public DbSet<Diagnosis> Diagnoses { get; set; }
+        public DbSet<Diagnosis> Diagnosis { get; set; }
     }
 }

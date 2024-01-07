@@ -12,7 +12,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<DiagnosisDbContext>(
     o => o.UseSqlServer(builder.Configuration.GetConnectionString("SqlServer")));
-
+builder.Services.AddDbContext<PatientDbContext>(
+    o => o.UseSqlServer(builder.Configuration.GetConnectionString("SqlServer")));
 
 builder.Services.AddTransient<IManageImage, ManageImage>();
 
